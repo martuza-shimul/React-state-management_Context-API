@@ -1,6 +1,6 @@
 import React, {useState, createContext} from 'react';
-import Nav from './Nav';
-import MovieList from './MovieList';
+// import Nav from './Nav';
+// import MovieList from './MovieList';
 
 export const MovieContext = createContext();
 
