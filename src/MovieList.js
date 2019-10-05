@@ -1,25 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Movie from './Movie';
+import {MovieContext} from './MovieContext';
 
 const MovieList = () => {
 
-    const [movies, setMovies] = useState([
-        {
-            name: 'Harry Potter',
-            price: '$10',
-            id: 23124
-        },
-        {
-            name: 'Game of Thrones',
-            price: '$15',
-            id: 2566124
-        },
-        {
-            name: 'Avengers:Endgame',
-            price: '$20',
-            id: 23524
-        }
-    ]);
+    const [movies, setMovies] = useContext(MovieContext);
 
     return(
 
